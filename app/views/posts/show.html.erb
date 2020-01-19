@@ -1,0 +1,18 @@
+<% content_for :page_title, @post.name%>
+<% content_for :page_subtitle, "Uploaded: #{@post.created_at}"%>
+
+<section class="section">
+	<div class="container">
+        <img class="post-image" width="200" height="40" src="<%= @post.link %>">
+		    <p class="level-item">
+		        <strong>Name: <%= @post.name %></strong>
+		    </p>
+        <br>
+			<p>
+				<%= link_to "Edit Name", edit_post_path(@post), class:"button" %>
+				<%= link_to "Back", posts_path, class:"button" %>
+				<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class:"button is-danger" %>
+			</p>
+		<hr/>
+	</div>
+</section>

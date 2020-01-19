@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: djw0gfmv7
+  api_key: "583438539443617"
+  api_secret: czKTJ8XM4CP4P6kTi89Pcf4_Amo
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: djw0gfmv7
+  api_key: "583438539443617"
+  api_secret: czKTJ8XM4CP4P6kTi89Pcf4_Amo
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: djw0gfmv7
+  api_key: "583438539443617"
+  api_secret: czKTJ8XM4CP4P6kTi89Pcf4_Amo
+  enhance_image_tag: true
+  static_file_support: false

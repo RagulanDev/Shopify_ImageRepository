@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Repository</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+	<script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+	<script>
+		var pusher = new Pusher('PUSHER_APP_KEY', {
+		cluster: 'eu',
+		encrypted: true
+		});
+	</script>
+  </head>
+  <body>
+  	<section class="hero is-primary is-bold ">
+	    <nav class="navbar">
+			<div class="container">
+				<div class="navbar-brand">
+				<%= link_to 'Home', root_path, class: "navbar-item" %>
+				<span class="navbar-burger burger" data-target="navbarMenuHeroA">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				</div>
+				<div id="navbarMenuHeroA" class="navbar-menu">
+				<div class="navbar-end">
+					<%= link_to "Add New Image", new_post_path, class:"button is-primary is-inverted is-outlined" %>
+				</div>
+	      	</div>
+		  </div>
+	    </nav>
+	  <div id="h-body"class="hero-body">
+	    <div class="container has-text-centered">
+	      <h1 class="title"> <%= yield :page_title %></h1>
+		  <h2 class="subtitle"><%= yield :page_subtitle %></h2>
+	    </div>
+	  </div>
+	</section>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<% content_for :page_title, "Image Repository" %>
+<% content_for :page_subtitle, "Upload and Share Your High-Quality Photos Here!"%>
+
+<section class="section">
+  <div class="grid">
+      <% @posts.each do |post| %>
+          <input onClick="window.location.href='posts/<%= post.id %>'" type="image" src="<%= post.link %>"/>      
+      <% end %>
+  </div>
+  <br>
+  <%
+
+=begin%>
+ <div class="container">
+    <table>
+      <tbody>
+        <% @posts.each do |post| %>
+          <tr>
+          <td><%= post.name %></td>
+          <td><%= post.link %></td>
+          <td><%= link_to 'Show', post %></td>
+          <td><%= link_to 'Edit', edit_post_path(post) %></td>
+          <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table> 
+  <div> 
+<%
+=end%>
+</section>

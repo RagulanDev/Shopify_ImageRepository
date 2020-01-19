@@ -1,0 +1,18 @@
+<div class="section">
+    <form class="uploads" method="POST" action="/posts/store" enctype="multipart/form-data">
+        <%= simple_form_for @post do |f| %>
+        <div class="field">
+            <div class="control">
+            <%= f.input :name, input_html: { class: 'input', name: "name" }, wrapper: false, label_html: { class: 'label' } %>
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <input type="file" name="image">
+            </div>
+        </div>
+        <%= f.button :submit, "Upload Image", class: "button is-primary"%>
+        <%= link_to "Back", posts_path, class:"button" %>
+        <% end %>
+    </form>
+</div>
