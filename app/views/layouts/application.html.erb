@@ -21,7 +21,7 @@
 				<div class="navbar-brand">
 				<%= link_to 'Home', root_path, class: "navbar-item" %>
 				<span class="navbar-burger burger" data-target="navbarMenuHeroA">
-					<span></span>
+					<span>abc</span>
 					<span></span>
 					<span></span>
 				</span>
@@ -29,6 +29,9 @@
 				<div id="navbarMenuHeroA" class="navbar-menu">
 				<div class="navbar-end">
 					<%= link_to "Add New Image", new_post_path, class:"button is-primary is-inverted is-outlined" %>
+					<% if !user_signed_in? %>
+						<%= link_to "Log in", "/users/sign_in", class:"button is-primary is-inverted is-outlined" %>
+					<% end %>
 				</div>
 	      	</div>
 		  </div>
@@ -38,6 +41,12 @@
 	      <h1 class="title"> <%= yield :page_title %></h1>
 		  <h2 class="subtitle"><%= yield :page_subtitle %></h2>
 	    </div>
+	  </div>
+	  <div class="container">
+		<% if user_signed_in? %>
+			<p> Hello, <%= current_user.email %> - <%= link_to "Sign out", destroy_user_session_path, :method => 'delete' %><p>
+			<br>
+		<% end %>
 	  </div>
 	</section>
     <%= yield %>
