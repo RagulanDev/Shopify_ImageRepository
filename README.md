@@ -1,5 +1,4 @@
 <h1>Shopify_ImageRepository</h1>
-<hr />
 <p>
   Built a simple image repository web application that allows users to add
   images to the repository, to share their favourite photos or memories with the
@@ -7,7 +6,6 @@
 </p>
 
 <h1>Motivation</h1>
-<hr />
 <p>
   This was the Shopify Developer Intern Challenge Question for Winter 2020. I
   thought the project idea of building an image repository was very interesting
@@ -16,7 +14,6 @@
 </p>
 
 <h1>Features</h1>
-<hr />
 <p>
     <ol>
         <li>User Authentication</li>
@@ -32,13 +29,11 @@
 </p>
 
 <h1>Screenshots</h1>
-<hr />
 <p>
   Screenshots will be added soon!
 </p>
 
 <h1>Tech/Framework used</h1>
-<hr />
 <p>
     <ul>
         <li>Bulma CSS</li>
@@ -55,13 +50,11 @@
 </p>
 
 <h1>Installation</h1>
-<hr />
 <p>
   Installation instructions will be added soon!
 </p>
 
 <h1>Next Steps</h1>
-<hr />
 <p>
   Screenshots will be added soon!
 </p>
