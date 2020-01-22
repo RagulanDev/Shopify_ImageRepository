@@ -4,6 +4,8 @@
   images to the repository, to share their favourite photos or memories with the
   internet.
 </p>
+<img src="https://res.cloudinary.com/djw0gfmv7/image/upload/c_scale,w_862/v1579667911/github/home_fvnhvm.png" alt="main">
+
 
 <h1>Motivation</h1>
 <p>
@@ -31,9 +33,8 @@
 </p>
 
 <h1>Screenshots</h1>
-<p>
-  Screenshots will be added soon!
-</p>
+<h2>Add Image</h2>
+<img src="https://res.cloudinary.com/djw0gfmv7/image/upload/v1579667635/add-image-re_hjdw87.gif" alt="add image">
 
 <h1>Tech/Framework used</h1>
 <p>
