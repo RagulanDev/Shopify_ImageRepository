@@ -1,0 +1,9 @@
+<% content_for :page_title, "Search Results: " + params[:name] %>
+
+<div class="container">
+    <div class="grid">
+        <% @posts.each do |post| %>
+            <input onClick="window.location.href='posts/<%= post.id %>'" type="image" src="<%= post.link %>"/>      
+        <% end %>
+    </div>
+</div>

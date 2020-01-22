@@ -1,15 +1,20 @@
 <% content_for :page_title, "Image Repository" %>
 <% content_for :page_subtitle, "Upload and Share Your High-Quality Photos Here!"%>
 
-<section class="section">
-  <div class="grid">
-      <% @posts.each do |post| %>
-          <input onClick="window.location.href='posts/<%= post.id %>'" type="image" src="<%= post.link %>"/>      
-      <% end %>
+<div class="container">
+  <div id="search-bar">
+  <form action="/search">
+      <input class="input" type="text" placeholder="Search Image..." name="name" onchange="this.form.submit()">
+  </form>
   </div>
-  <br>
-  <%
+  <div class="grid">
+    <% @posts.each do |post| %>
+      <input onClick="window.location.href='posts/<%= post.id %>'" type="image" src="<%= post.link %>"/>      
+    <% end %>
+  </div>
+</div>
 
+<%
 =begin%>
  <div class="container">
     <table>
@@ -27,5 +32,5 @@
     </table> 
   <div> 
 <%
-=end%>
-</section>
+=end
+%>

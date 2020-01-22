@@ -8,6 +8,10 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+  def search
+    @posts = Post.where("name LIKE ?", "%" + params[:name]+ "%")
+  end
+
   def store
     # Upload image to Cloudinary
     @value = Cloudinary::Uploader.upload(params[:image])
