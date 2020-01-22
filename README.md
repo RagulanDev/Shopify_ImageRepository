@@ -24,6 +24,8 @@
         <p>Only Admin users are able to delete images from the repository </p>
         <li>EDIT image(s)</li>
         <p>Only Admin users are able to edit images’ name from the repository </p>
+        <li>SEARCH Function</li>
+        <p>Users can search for images in the repository </p>
         <li>More Features Coming Soon!</li>
     </ol>
 </p>
@@ -56,5 +58,5 @@
 
 <h1>Next Steps</h1>
 <p>
-  Screenshots will be added soon!
+  Next Steps will be added soon!
 </p>
