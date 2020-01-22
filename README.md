@@ -41,6 +41,9 @@
 <h2>Add Image</h2>
 <img src="https://res.cloudinary.com/djw0gfmv7/image/upload/v1579667635/add-image-re_hjdw87.gif" alt="add image">
 
+<h2>Delete Image</h2>
+<img src="https://res.cloudinary.com/djw0gfmv7/image/upload/v1579727542/github/delete-image-re_vuv1yf.gif" alt="delete image">
+
 <h2>Search </h2>
 <img src="https://res.cloudinary.com/djw0gfmv7/image/upload/v1579726437/github/search-re_ijalun.gif" alt="search image">
 
