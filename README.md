@@ -1,24 +1,60 @@
-# README
+<h1>Shopify_ImageRepository</h1>
+<p>
+  Built a simple image repository web application that allows users to add
+  images to the repository, to share their favourite photos or memories with the
+  internet.
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1>Motivation</h1>
+<p>
+  This was the Shopify Developer Intern Challenge Question for Winter 2020. I
+  thought the project idea of building an image repository was very interesting
+  but to make it more interesting, I added the constraint to use Ruby on Rails
+  as the backend to mimic Shopify’s tech stack.
+</p>
 
-Things you may want to cover:
+<h1>Features</h1>
+<p>
+    <ol>
+        <li>User Authentication</li>
+        <p>Users can create admin accounts to edit and delete </p>
+        <li>ADD image(s)</li>
+        <p>Users are able to securely upload and store individual images  </p>
+        <li>DELETE image(s)</li>
+        <p>Only Admin users are able to delete images from the repository </p>
+        <li>EDIT image(s)</li>
+        <p>Only Admin users are able to edit images’ name from the repository </p>
+        <li>More Features Coming Soon!</li>
+    </ol>
+</p>
 
-* Ruby version
+<h1>Screenshots</h1>
+<p>
+  Screenshots will be added soon!
+</p>
 
-* System dependencies
+<h1>Tech/Framework used</h1>
+<p>
+    <ul>
+        <li>Bulma CSS</li>
+        <li>Ruby (ruby 2.7.0)</li>
+        <li>Ruby on Rails (6.0.2.1)</li>
+        <li>Ruby Gems</li>
+        <ul>
+            <li>simple_form</li>
+            <li>devise</li>
+            <li>cloudinary</li>
+            <li>pusher</li>
+        </ul>
+    </ul>
+</p>
 
-* Configuration
+<h1>Installation</h1>
+<p>
+  Installation instructions will be added soon!
+</p>
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<h1>Next Steps</h1>
+<p>
+  Screenshots will be added soon!
+</p>
