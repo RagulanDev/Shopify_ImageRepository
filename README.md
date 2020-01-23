@@ -53,6 +53,7 @@
         <li>Bulma CSS</li>
         <li>Ruby (ruby 2.7.0)</li>
         <li>Ruby on Rails (6.0.2.1)</li>
+        <li>SQLite</li>
         <li>Ruby Gems</li>
         <ul>
             <li>simple_form</li>
@@ -64,9 +65,12 @@
 </p>
 
 <h1>Installation</h1>
-<p>
-  Installation instructions will be added soon!
-</p>
+<p>Assuming Ruby and Rails is installed. In the terminal, </p>
+    <p>run `yarn install --check-files`</p>
+<p>and then, </p>
+    <p>run 'rails db:migrate RAILS_ENV=development' </p>
+<p>Now you can run application with, </p>
+    <p>run 'rails s' </p>
 
 <h1>Next Steps</h1>
 <p>
