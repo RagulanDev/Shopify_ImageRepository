@@ -56,7 +56,7 @@ group :development do
   # reload the browser after changes to assets/helpers/tests 
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
   # Make errors prettier
-  gem 'better_errors', '~> 2.5', '>= 2.5.1'
+  gem 'better_errors', '~> 2.8'
 end
 
 group :test do
